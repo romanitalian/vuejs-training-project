@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Example component: {{message}}</h1>
-        <app-input :msgInput="message"></app-input>
+        <app-input :msgInput="message" @funcMsgChange="message = $event"></app-input>
     </div>
 </template>
 
