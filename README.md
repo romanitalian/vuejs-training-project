@@ -1,1 +1,1 @@
-# vue-training-project
+# vuejs-training-project
