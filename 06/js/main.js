@@ -14,5 +14,8 @@ Vue.component("app-car", {
 
 new Vue({
     el: "#app",
-    data: {}
+});
+
+new Vue({
+    el: "#app2",
 });
