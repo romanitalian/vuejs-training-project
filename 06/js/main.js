@@ -27,7 +27,12 @@ new Vue({
                     ]
                 }
             },
-            template: '<div><div class="car" v-for="car in cars"><p>{{car.model}}</p></div></div>'
+            template: '<div><div class="car" v-for="car in cars"><p>{{car.model | lower}}</p></div></div>',
+            filters: {
+                lower: function (value) {
+                    return value.toLowerCase()
+                }
+            }
         }
     }
 });
