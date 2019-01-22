@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js - 04 | Условия, списки и циклы</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <button @click="show = !show">Show / Hide</button>
+    <p v-if="show">Text, may hide: v-if</p>
+    <p v-else>Second text: v-else</p>
+    <p v-show="show">Text, may hide - 2: v-show</p>
+
+    <ul>
+        <li>{{cars[2].model}}</li>
+    </ul>
+    <ul>
+        <li v-for="(car, i) in cars">
+            {{i+1}} - Model: {{car.model}} | Speed: {{car.speed}}
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

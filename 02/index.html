@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js - 02 | События, атрибуты и методы</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <p v-on:click="title='some text - clicked'">Text</p>
+    <p @click="title='some text - clicked 2'">Text</p>
+    <p @mouseover="title='some text - mouseover'">Text</p>
+    <p @mouseover="changeText">Change text using vue method</p>
+    <div>{{title}}</div>
+
+    <p v-bind:class="styleCss">Color: {{styleCss}}</p>
+    <p :class="styleCss">Color: {{styleCss}}</p>
+    <input type="text" v-on:input="styleCss = $event.target.value">
+</div>
+
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

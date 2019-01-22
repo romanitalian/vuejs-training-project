@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js - 05 | Работа с фильтрами (filters)</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <button @click="show = !show">Show / Hide</button>
+    <p v-if="show">if show: {{msg | lowercase | capitalize}}</p>
+    <p v-else>else: {{showMsg}}</p>
+</div>
+
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js - 03 | Обработанные свойства</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <input type="text" @input="increment($event.target.value)">
+    <p>{{value}}</p>
+    <p>{{doubleValue}}</p>
+</div>
+
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
